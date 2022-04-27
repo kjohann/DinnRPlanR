@@ -1,8 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom/client';
-import { initializeApp } from "firebase/app";
-import './index.css';
-import App from './App';
+import { initializeApp } from 'firebase/app';
+import { ColorModeScript } from '@chakra-ui/react';
+import { App } from './App';
 
 initializeApp({
   apiKey: "AIzaSyDGBvh3MyrUf6xg-hfZBXjYyKl11ujgmpA",
@@ -16,8 +16,10 @@ initializeApp({
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
+    <ColorModeScript />
     <App />
   </React.StrictMode>
 );
